@@ -1,0 +1,43 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Kreiranje responsive galerije</title>
+        <style>
+            .class {
+                width: 100%;
+                height: auto;
+                display: block;
+                padding: 10px;
+            }@media (min-width: 601px) and (max-width: 1024px) {
+            .kutija {
+            grid-template-columns: repeat(3, 1fr); /*Tableti*/
+            }}@media (max-width: 600px) {
+            .kutija {
+            grid-template-columns: 1fr; /*Telefon*/
+            }}@media (min-width: 1025px) {
+            .kutija {
+            grid-template-columns: repeat(4, 1fr); /*Desktop*/
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="kutija">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+            <img src="place.png" alt="place">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nisl id nisl finibus,
+            in vestibulum mauris condimentum. Donec porta a sem dapibus venenatis. Praesent quam orci, 
+            fermentum eu consectetur a, blandit pretium sem. Fusce interdum dictum sodales. 
+            Quisque non mi id mi dictum consequat. Proin ullamcorper dolor quam, sit amet tincidunt lectus 
+            sollicitudin sit amet. Curabitur maximus pellentesque dui, sed bibendum metus venenatis vitae. 
+            Ut fermentum varius consequat. Pellentesque lobortis lectus iaculis nulla porttitor, 
+            non laoreet est lobortis. Nulla tellus sapien, vehicula nec leo sit amet, molestie rhoncus odio.</p>
+        </div>   
+    </body>
+</html>
